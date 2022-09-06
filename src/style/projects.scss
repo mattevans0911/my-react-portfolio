@@ -58,3 +58,31 @@
     height: 100px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .mapped-data {
+    display: grid;
+    grid-template-rows: auto;
+    height: 200px;
+
+    .mapped-project-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  .project-wrapper {
+    overflow: scroll;
+
+    .project-title {
+      text-align: center;
+    }
+
+    .data-wrapper {
+      display: grid;
+      grid-template-rows: auto;
+    }
+  }
+}
