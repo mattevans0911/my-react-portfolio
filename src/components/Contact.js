@@ -9,11 +9,20 @@ function Contact() {
         <h1 className="contact-title">Feel Free To Reach Out!</h1>
         <div className="email">
           <FontAwesomeIcon icon={faEnvelope} className="icon" />
-          matthewevans0911@gmail.com
+          <a
+            className="send"
+            onClick={() =>
+              (window.location = "mailto:matthewevans0911@gmail.com")
+            }
+          >
+            matthewevans0911@gmail
+          </a>
         </div>
         <div className="phone">
           <FontAwesomeIcon icon={faPhone} className="icon" />
-          1(717) 841 6242
+          <a className="call" href="tel:+1-717-841-6242">
+            1(717) 841 6242
+          </a>
         </div>
       </div>
       <div className="map-wrapper">
