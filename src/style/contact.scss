@@ -73,11 +73,11 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .contact-wrapper {
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow: auto;
 
     .contact-content-wrapper {
       display: flex;
