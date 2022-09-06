@@ -1,0 +1,52 @@
+.contact-wrapper {
+  height: 81.12vh;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: auto;
+  overflow: hidden;
+
+  .contact-content-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #ede7f6;
+    height: 90%;
+
+    .contact-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3em;
+    }
+
+    .email {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+    }
+
+    .phone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+    }
+
+    .icon {
+      margin-right: 25px;
+    }
+  }
+
+  .map-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .map {
+      height: 700px;
+      width: 700px;
+    }
+  }
+}

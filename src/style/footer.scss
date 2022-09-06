@@ -1,0 +1,15 @@
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+  .social-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 2em;
+    transition: 0.5s ease-in-out;
+  }
+}

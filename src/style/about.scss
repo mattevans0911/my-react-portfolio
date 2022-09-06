@@ -1,0 +1,53 @@
+.about-wrapper {
+  height: 81.12vh;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: auto;
+  overflow: hidden;
+
+  .about-content-wrapper {
+    display: inline-grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: auto;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: #ede7f6;
+    height: 150px;
+  }
+
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    margin-left: 50px;
+    color: #ede7f6;
+  }
+
+  .language-list {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 75px;
+    color: #ede7f6;
+  }
+
+  .resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #ede7f6;
+    padding: 50p;
+  }
+}
