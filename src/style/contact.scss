@@ -50,3 +50,48 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+    .contact-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .contact-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 24px;
+      }
+
+      .email {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      .phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      .icon {
+        font-size: 16px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
