@@ -6,6 +6,7 @@
   width: auto;
   overflow: hidden;
   color: #ede7f6;
+  margin-bottom: 1px;
 
   .project-title {
     display: flex;
@@ -19,7 +20,7 @@
     border: 5px solid rgba(150, 54, 227, 1);
     border-radius: 5px;
     padding: 10px;
-    margin: 10px;
+    margin: 75px;
 
     .mapped-project-title {
       display: flex;
@@ -59,31 +60,82 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
   .mapped-data {
-    display: grid;
-    grid-template-rows: auto;
-    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .mapped-project-title {
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-      margin-bottom: 20px;
     }
   }
   .project-wrapper {
-    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 
     .project-title {
+      height: 50px;
+      margin-bottom: 150px;
       text-align: center;
+    }
+
+    .mapped-data {
+      height: 150px;
+    }
+
+    .mapped-project-title {
+      margin-bottom: 15px;
+    }
+
+    .github {
+      margin-top: 15px;
     }
 
     .data-wrapper {
       display: grid;
       grid-template-rows: auto;
       margin-top: -100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .project-wrapper {
+    height: 100%;
+    overflow: auto;
+
+    .project-title {
+      font-size: 1.5em;
+      margin-bottom: 550px;
+    }
+
+    .data-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px;
+      margin-bottom: -95px;
+
+      .mapped-data {
+        height: 325px;
+      }
+
+      .mapped-project-title {
+        margin-bottom: 25px;
+      }
+
+      .mapped-project-description {
+        margin-top: 75px;
+      }
+
+      .github {
+        margin-top: 80px;
+      }
     }
   }
 }

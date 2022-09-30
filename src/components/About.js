@@ -9,15 +9,14 @@ function About() {
         <div className="about-me">
           <p>
             I am a Full Stack Developer, located in Lexington SC, with a passion
-            for solving problems and implementing elegant solutions. I currently
-            work at both Code Ninjas and SemperFi Design. <br />
-            <br />I have worked with the following languages
+            for solving problems and implementing elegant solutions. <br />
+            <br />I have experience working with the following
           </p>
         </div>
         <ul className="language-list">
           <li>HTML</li>
-          <li>SCSS</li>
-          <li>Python</li>
+          <li>CSS</li>
+          <li>Python/Flask</li>
           <li>JavaScript</li>
           <li>React</li>
         </ul>

@@ -1,15 +1,16 @@
 .about-wrapper {
-  height: 81.12vh;
+  height: 100%;
   font-family: "IBM Plex Sans Condensed", sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: auto;
-  overflow: hidden;
 
   .about-content-wrapper {
-    display: inline-grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
 
     .title {
       display: flex;
@@ -17,7 +18,7 @@
       align-items: center;
       font-size: 3em;
       color: #ede7f6;
-      height: 150px;
+      height: 100px;
     }
 
     .about-me {
@@ -26,8 +27,8 @@
       align-items: center;
       text-align: center;
       font-size: 24px;
-      margin-left: 50px;
       color: #ede7f6;
+      margin-top: -50px;
     }
 
     .language-list {
@@ -43,57 +44,61 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 100px;
       text-decoration: none;
       font-size: 1.2em;
       color: #ede7f6;
-      padding: 50p;
+      height: 50px;
+      margin-top: 75px;
+      transition: 0.5s ease-in-out;
+      margin-bottom: 150px;
+
+      &:hover {
+        color: #0000ee;
+      }
     }
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
   .about-wrapper {
-    overflow: auto;
+    display: flex;
+    flex-direction: column;
 
     .about-content-wrapper {
-      display: grid;
-      margin-left: 50px;
+      display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      width: 100%;
-      text-align: center;
+      height: 70vh;
+      margin-bottom: 57px;
+    }
+  }
+}
 
+@media only screen and (max-width: 400px) {
+  .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: -76px;
+
+    .about-content-wrapper {
       .title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-left: 50px;
+        font-size: 2.5em;
+        margin-bottom: 75px;
       }
 
       .about-me {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        font-size: 1.25em;
       }
 
       .language-list {
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        margin-bottom: 50px;
       }
 
       .resume {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-left: 50px;
-        margin-top: 60px;
+        margin-top: 75px;
       }
     }
   }

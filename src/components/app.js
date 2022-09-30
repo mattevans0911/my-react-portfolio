@@ -27,8 +27,8 @@ export default class App extends Component {
                 <Contact />
               </Route>
             </Switch>
+            <Footer />
           </div>
-          <Footer />
         </Router>
       </div>
     );
