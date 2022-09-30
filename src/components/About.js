@@ -22,7 +22,7 @@ function About() {
         </ul>
         <a
           className="resume"
-          href="https://drive.google.com/file/d/1A4_FbE-od13dcsmZocf0evrAW0UNKh3z/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Q6XDyhT_3P2vFQMioFGoSSPZsT25kYWu/view?usp=sharing"
           target="_blank"
         >
           Download My Resume Here!
